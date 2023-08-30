@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  background-image: url(./img/4Cb2.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  align-content: center;
+}
+
+body,
+button,
+input {
+  font-family: "Cinzel", serif;
+}
+header {
+  border-radius: 6px;
+  background: #ffffffdc;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  padding: 4.8rem 6.4rem 6.4rem;
+  border-radius: 0.6rem;
+  margin: 0 auto;
+  text-align: center;
+  width: min(42.8rem, 90%);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.6rem;
+  font-weight: bold;
+  color: rgb(132, 25, 25);
+}
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+
+  font-family: "Phudu", cursive;
+
+  margin-top: 4rem;
+  font-weight: bold;
+  margin-bottom: -2rem;
+}
+
+p {
+  color: rgb(39, 71, 99);
+
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.8;
+  font-size: 1.8rem;
+}
+.numeros {
+  color: rgb(132, 25, 25);
+  font-family: "Cinzel", serif;
+}
+.curso {
+  
+  font-family: "Tilt Prism", cursive;
+  font-size: 2.0rem;
+  color: #7879f1;
+}
+form {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+input,
+button {
+  border: none;
+  padding: 1.65rem;
+}
+input {
+  background-color: #dce2e9;
+  width: 6rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+button {
+  background-color: #7879f1;
+  color: rgb(132, 25, 25);
+  font-weight: bold;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
