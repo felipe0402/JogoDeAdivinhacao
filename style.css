@@ -118,20 +118,21 @@ h2 {
   border-radius: 0.4rem;
 }
 
-h1 span {
-  transition: 0.5s linear;
-}
-h1:hover span:nth-child(1) {
-  margin-right: 5px;
-}
-h1:hover span:nth-child(1):after {
-  content: "'";
-}
-h1:hover span:nth-child(2) {
-  margin-left: 30px;
-}
-h1:hover span {
-  color: var(--blue);
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
-}
-/*made with ❤, by qpi65*/
+
+  h1 span {
+    transition: 0.5s linear;
+  }
+  .Ativaleds span:nth-child(1) {
+    margin-right: 5px;
+  }
+  .Ativaleds span:nth-child(1):after {
+    content: "'";
+  }
+  .Ativaleds span:nth-child(2) {
+    margin-left: 30px;
+  }
+  .Ativaleds span {
+    color: var(--blue);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  }
+
