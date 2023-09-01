@@ -48,7 +48,7 @@ button {
   font-weight: bold;
   border-radius: 0 0.4rem 0.4rem 0;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.4s;
 }
 button:hover {
   background-color: var(--blue2);
@@ -62,6 +62,17 @@ h1 {
   margin-bottom: 1.6rem;
   font-weight: bold;
   color: var(--red-gradients);
+}
+h1,
+h2,
+p,
+button {
+  user-select: none !important;
+  -ms-user-select: none !important;
+  -moz-user-select: none !important;
+  -khtml-user-select: none !important;
+  -webkit-user-select: none !important;
+  -webkit-touch-callout: none !important;
 }
 .curso {
   text-align: center;
@@ -118,21 +129,20 @@ h2 {
   border-radius: 0.4rem;
 }
 
+h1 span {
+  transition: 0.5s linear;
+}
 
-  h1 span {
-    transition: 0.5s linear;
-  }
-  .Ativaleds span:nth-child(1) {
-    margin-right: 5px;
-  }
-  .Ativaleds span:nth-child(1):after {
-    content: "'";
-  }
-  .Ativaleds span:nth-child(2) {
-    margin-left: 30px;
-  }
-  .Ativaleds span {
-    color: var(--blue);
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
-  }
-
+.Ativaleds span:nth-child(1) {
+  margin-right: 5px;
+}
+.Ativaleds span:nth-child(1):after {
+  content: "'";
+}
+.Ativaleds span:nth-child(2) {
+  margin-left: 30px;
+}
+.Ativaleds span {
+  color: var(--blue);
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}

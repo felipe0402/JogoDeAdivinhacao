@@ -1,8 +1,8 @@
 const ativaClass = document.getElementById("titulo");
-const inputs = document.getElementById("imput");
+let inputs = document.getElementById("inputNunber");
 
-const screen = document.getElementsByClassName("screen1");
-const scren2 = document.getElementsByClassName("screen2");
+const ramdoNuber = Math.round(Math.random() * 10);
+let xAttempts = 1;
 
 inputs.addEventListener("focus", focusHandler);
 inputs.addEventListener("focusout", focusHandler);
@@ -13,6 +13,12 @@ function focusHandler() {
 
 function buttonHandler(event) {
   event.preventDefault();
-  screen.classList.toggle("hide");
-  scren2.classList.toggle("hide");
+
+  if (Number(inputs.value) == ramdoNuber) {
+    document.querySelector(".screen1").classList.add("hide");
+    document.querySelector(".screen2").classList.remove("hide");
+
+    document.querySelector(".screen2 .numeros ").innerText = `${xAttempts}`;
+  }
+  xAttempts++;
 }
