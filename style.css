@@ -35,14 +35,19 @@ input {
 header {
   border-radius: 6px;
   background: #ffffffa5;
+  background-attachment: fixed;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
   padding: 4.8rem 6.4rem 6.4rem;
   border-radius: 0.6rem;
   margin: 0 auto;
   text-align: center;
+  position: absolute;
+
   width: min(42.8rem, 90%);
   box-shadow: var(--shadow-gradients-1);
 }
+
+
 button {
   background-color: var(--blue);
   font-weight: bold;

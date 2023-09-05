@@ -32,6 +32,7 @@ function buttonHandler(event) {
 
     screen2.querySelector(" .numeros ").innerText = `${xAttempts}`;
   }
+  limitInput();
   inputs.value = "";
   xAttempts++;
 }
@@ -45,7 +46,15 @@ function rendomResetClick() {
 btn1.addEventListener("click", buttonHandler);
 btn2.addEventListener("click", rendomResetClick);
 
-
+function limitInput() {
+  if (
+    Number(inputs.value) < 0 ||
+    Number(inputs.value) > 10 ||
+    (!Number(inputs.value) && Number(inputs.value) != 0)
+  ) {
+    alert("So sera aceito numuros entre 0 e 10");
+  }
+}
 
 /*Desafios
   Cria um limite no input entre 0 e 10 

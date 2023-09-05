@@ -23,23 +23,25 @@
   </head>
   <body>
     <header>
-      <div class="screen1">
-        <h1 id="titulo"><span>Jogo da Adivinhaçao</span></h1>
-        <p>
-          Adivinhe um numero entre <strong class="numeros"> 0</strong> e
-          <strong class="numeros">10</strong>
-        </p>
+      <div class="box">
+        <div class="screen1">
+          <h1 id="titulo"><span>Jogo da Adivinhaçao</span></h1>
+          <p>
+            Adivinhe um numero entre <strong class="numeros"> 0</strong> e
+            <strong class="numeros">10</strong>
+          </p>
 
-        <form>
-          <input type="number" name="" id="inputNunber" />
-          <button id="btn1" onclick="buttonHandler(event); ">Tentar</button>
-        </form>
+          <form>
+            <input type="number" min="0" max="10" name="" id="inputNunber" />
+            <button id="btn1" onclick="buttonHandler(event); ">Tentar</button>
+          </form>
+        </div>
+        <div class="screen2 hide">
+          <h2>Acertou em <strong class="numeros">3</strong> tetativas</h2>
+          <button id="btn2">Jogar novamente</button>
+        </div>
+        <h2 class="curso">Projetos <strong> rocketseat</strong></h2>
       </div>
-      <div class="screen2 hide">
-        <h2>Acertou em <strong class="numeros">3</strong> tetativas</h2>
-        <button id="btn2">Jogar novamente</button>
-      </div>
-      <h2 class="curso">Projetos <strong> rocketseat</strong></h2>
     </header>
   </body>
   <script src="./script.js"></script>
